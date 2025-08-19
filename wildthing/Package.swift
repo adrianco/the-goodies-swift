@@ -18,7 +18,8 @@ let package = Package(
             targets: ["Wildthing"]),
     ],
     dependencies: [
-        .package(path: "../inbetweenies")
+        .package(path: "../inbetweenies"),
+        .package(url: "https://github.com/stephencelis/SQLite.swift.git", from: "0.14.0")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -26,7 +27,8 @@ let package = Package(
         .target(
             name: "Wildthing",
             dependencies: [
-                .product(name: "Inbetweenies", package: "inbetweenies")
+                .product(name: "Inbetweenies", package: "inbetweenies"),
+                .product(name: "SQLite", package: "SQLite.swift")
             ]),
         .testTarget(
             name: "WildthingTests",

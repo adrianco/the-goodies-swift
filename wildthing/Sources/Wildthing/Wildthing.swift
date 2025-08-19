@@ -8,10 +8,10 @@ import Foundation
 /// Package information
 public struct Wildthing {
     /// Package version
-    public static let version = "1.0.0"
+    public static let version = "2.0.0"
     
     /// Package description
-    public static let description = "Swift client for distributed knowledge graph synchronization"
+    public static let description = "Swift client for distributed knowledge graph synchronization with SQLite persistence"
     
     /// Default configuration for quick setup
     public static func defaultConfiguration() -> Configuration {
@@ -20,3 +20,7 @@ public struct Wildthing {
     
     private init() {}
 }
+
+// Re-export the full implementation as the default client
+@available(iOS 15.0, macOS 12.0, *)
+public typealias WildthingClient = WildthingClientV2
