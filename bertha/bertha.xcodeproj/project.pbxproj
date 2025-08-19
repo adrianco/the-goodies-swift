@@ -27,8 +27,8 @@
 		276CE6C62E53F25000E83C0B /* bertha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bertha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		276CE6D32E53F25100E83C0B /* berthaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = berthaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		276CE6DD2E53F25100E83C0B /* berthaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = berthaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		276CE6F02E53F29E00E83C0B /* wildthing */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = wildthing; sourceTree = "<group>"; };
 		276CE6F22E53F30E00E83C0B /* inbetweenies */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = inbetweenies; path = ../inbetweenies; sourceTree = SOURCE_ROOT; };
+		2798BB362E53F82D008DD5A2 /* wildthing */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = wildthing; path = ../wildthing; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -77,7 +77,7 @@
 		276CE6BD2E53F24F00E83C0B = {
 			isa = PBXGroup;
 			children = (
-				276CE6F02E53F29E00E83C0B /* wildthing */,
+				2798BB362E53F82D008DD5A2 /* wildthing */,
 				276CE6F22E53F30E00E83C0B /* inbetweenies */,
 				276CE6C82E53F25000E83C0B /* bertha */,
 				276CE6D62E53F25100E83C0B /* berthaTests */,
