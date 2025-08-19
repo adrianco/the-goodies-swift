@@ -62,6 +62,7 @@ fastlane/screenshots/**/*.png
 fastlane/test_output
 
 # Claude Flow generated files
+.claude-flow/
 .claude/settings.local.json
 .mcp.json
 claude-flow.config.json
