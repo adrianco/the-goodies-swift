@@ -1,3 +1,34 @@
+/**
+ * File: LocalStorage.swift
+ * Purpose: SQLite-based local storage for offline-first data persistence
+ * 
+ * CONTEXT:
+ * Provides persistent storage for entities and relationships with sync tracking.
+ * Uses SQLite for reliable local data management with support for pending changes,
+ * conflict detection, and vector clock synchronization.
+ * 
+ * FUNCTIONALITY:
+ * - SQLite database initialization and schema management
+ * - Entity CRUD operations with version tracking
+ * - Relationship management with bidirectional references
+ * - Pending changes queue for offline sync
+ * - Vector clock and sync metadata persistence
+ * - Atomic operations with transaction support
+ * 
+ * PYTHON PARITY:
+ * Corresponds to blowing-off/storage.py in Python implementation
+ * - ✅ SQLite persistence layer
+ * - ✅ Entity storage with versioning
+ * - ✅ Relationship storage
+ * - ✅ Pending changes tracking
+ * - ✅ Sync metadata management
+ * - ✅ Transaction support
+ * 
+ * CHANGES:
+ * - 2025-08-19: Added comprehensive documentation
+ * - 2025-08-18: Implemented full storage layer with SQLite
+ */
+
 import Foundation
 import SQLite
 import Inbetweenies

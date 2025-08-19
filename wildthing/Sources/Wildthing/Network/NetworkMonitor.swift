@@ -1,3 +1,32 @@
+/**
+ * File: NetworkMonitor.swift
+ * Purpose: Real-time network connectivity monitoring
+ * 
+ * CONTEXT:
+ * Monitors network availability and quality to enable intelligent
+ * sync decisions and offline mode handling. Provides reactive
+ * updates when network state changes using Apple's Network framework.
+ * 
+ * FUNCTIONALITY:
+ * - Real-time network path monitoring
+ * - Connection type detection (WiFi, Cellular, Ethernet)
+ * - Network quality assessment (expensive, constrained)
+ * - Host reachability checking
+ * - Automatic reconnection triggering
+ * - Observable network state via Combine
+ * 
+ * PYTHON PARITY:
+ * Enhanced feature not in Python implementation
+ * - ✅ Network state monitoring
+ * - ✅ Auto-reconnection support
+ * - ✅ Connection type detection
+ * - ➕ iOS/macOS specific enhancements
+ * 
+ * CHANGES:
+ * - 2025-08-19: Added comprehensive documentation
+ * - 2025-08-18: Implemented network monitoring with NWPathMonitor
+ */
+
 import Foundation
 import Network
 import Combine

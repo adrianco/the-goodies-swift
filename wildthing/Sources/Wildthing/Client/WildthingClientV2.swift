@@ -1,3 +1,35 @@
+/**
+ * File: WildthingClientV2.swift
+ * Purpose: Main client implementation for FunkyGibbon server synchronization
+ * 
+ * CONTEXT:
+ * This is the primary interface for client applications to interact with the
+ * distributed knowledge graph. It manages connections, authentication, data
+ * synchronization, and local/remote state coordination.
+ * 
+ * FUNCTIONALITY:
+ * - Connection management with authentication support
+ * - Bidirectional synchronization using vector clocks
+ * - Automatic sync with configurable intervals
+ * - Offline support with pending changes tracking
+ * - Network monitoring and auto-reconnection
+ * - Entity and relationship CRUD operations
+ * 
+ * PYTHON PARITY:
+ * Corresponds to blowing-off/client.py in Python implementation
+ * - ✅ Connection management (connect/disconnect)
+ * - ✅ Authentication (token and password-based)
+ * - ✅ Sync operations (delta and full sync)
+ * - ✅ Entity/relationship operations
+ * - ✅ Offline queue management
+ * - ✅ Auto-sync capability
+ * - ⚠️  MCP tools integration (not yet implemented)
+ * 
+ * CHANGES:
+ * - 2025-08-19: Added comprehensive documentation
+ * - 2025-08-18: Initial full implementation
+ */
+
 import Foundation
 import Combine
 import Inbetweenies

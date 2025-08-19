@@ -1,3 +1,35 @@
+/**
+ * File: Entity.swift
+ * Purpose: Core Entity model for knowledge graph nodes
+ * 
+ * CONTEXT:
+ * Defines the fundamental data structure for nodes in the distributed
+ * knowledge graph. Entities represent smart home devices, locations,
+ * users, and other domain objects with versioning support for
+ * conflict-free replicated data types (CRDT).
+ * 
+ * FUNCTIONALITY:
+ * - Unique identification with UUID
+ * - Version tracking for conflict resolution
+ * - Flexible content storage with AnyCodable
+ * - Parent version tracking for causality
+ * - Type classification (device, location, user, etc.)
+ * - Source tracking (manual, homekit, matter, etc.)
+ * - Conversion to/from sync change representations
+ * 
+ * PYTHON PARITY:
+ * Corresponds to Entity class in Python inbetweenies
+ * - ✅ All fields match Python implementation
+ * - ✅ Codable for JSON serialization
+ * - ✅ Version and parent version tracking
+ * - ✅ EntityType and SourceType enumerations
+ * - ✅ Change representation for sync
+ * 
+ * CHANGES:
+ * - 2025-08-19: Added comprehensive documentation
+ * - 2025-08-18: Initial Entity implementation with full type support
+ */
+
 import Foundation
 
 /// Entity types in the knowledge graph

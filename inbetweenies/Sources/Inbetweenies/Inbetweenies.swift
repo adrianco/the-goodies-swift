@@ -1,3 +1,33 @@
+/**
+ * File: Inbetweenies.swift
+ * Purpose: Core protocol package for distributed knowledge graph synchronization
+ * 
+ * CONTEXT:
+ * Inbetweenies defines the shared protocol and data models used by both
+ * client (Wildthing) and server (FunkyGibbon) for maintaining consistency
+ * in a distributed smart home knowledge graph system.
+ * 
+ * FUNCTIONALITY:
+ * - Entity and EntityRelationship data models
+ * - Vector clock implementation for causality tracking
+ * - Conflict resolution strategies
+ * - Sync protocol definitions
+ * - MCP (Model Context Protocol) message types
+ * 
+ * PYTHON PARITY:
+ * Corresponds to inbetweenies package in Python implementation
+ * - ✅ Entity and relationship models
+ * - ✅ Vector clock implementation
+ * - ✅ Conflict resolution
+ * - ✅ Sync protocol types
+ * - ⚠️  Graph operations (partial implementation)
+ * - ⚠️  MCP message handling (not yet implemented)
+ * 
+ * CHANGES:
+ * - 2025-08-19: Added comprehensive documentation
+ * - 2025-08-18: Initial protocol implementation
+ */
+
 /// Inbetweenies - Shared synchronization protocol for The Goodies distributed MCP knowledge graph
 ///
 /// This package provides the core models and protocols for synchronizing

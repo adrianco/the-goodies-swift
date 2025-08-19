@@ -1,3 +1,31 @@
+/**
+ * File: EntityRelationship.swift
+ * Purpose: Relationship model for knowledge graph edges
+ * 
+ * CONTEXT:
+ * Defines relationships (edges) between entities in the knowledge graph.
+ * Relationships are versioned and support properties for storing
+ * metadata about the connection between entities.
+ * 
+ * FUNCTIONALITY:
+ * - Bidirectional relationships with version tracking
+ * - Typed relationships (locatedIn, controls, monitors, etc.)
+ * - Property storage for relationship metadata
+ * - Version tracking for both source and target entities
+ * - Conversion to/from sync change representations
+ * 
+ * PYTHON PARITY:
+ * Corresponds to EntityRelationship in Python inbetweenies
+ * - ✅ All relationship types match Python
+ * - ✅ Property storage with AnyCodable
+ * - ✅ Bidirectional version tracking
+ * - ✅ Change representation for sync
+ * 
+ * CHANGES:
+ * - 2025-08-19: Added comprehensive documentation
+ * - 2025-08-18: Initial relationship implementation
+ */
+
 import Foundation
 
 /// Types of relationships between entities

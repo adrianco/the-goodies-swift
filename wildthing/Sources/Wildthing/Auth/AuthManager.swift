@@ -1,3 +1,32 @@
+/**
+ * File: AuthManager.swift
+ * Purpose: Authentication management for server connections
+ * 
+ * CONTEXT:
+ * Handles authentication tokens and credentials for secure communication
+ * with the FunkyGibbon server. Supports both token-based and password
+ * authentication methods with secure Keychain storage.
+ * 
+ * FUNCTIONALITY:
+ * - JWT token storage and management
+ * - Password-based authentication flow
+ * - Token refresh and expiration handling
+ * - Secure credential storage in iOS/macOS Keychain
+ * - Request signing with authentication headers
+ * 
+ * PYTHON PARITY:
+ * Corresponds to auth functionality in Python blowing-off
+ * - ✅ Token-based authentication
+ * - ✅ Password authentication
+ * - ✅ Request signing with Bearer tokens
+ * - ✅ Secure token persistence
+ * - ✅ JWT expiration validation
+ * 
+ * CHANGES:
+ * - 2025-08-19: Added comprehensive documentation
+ * - 2025-08-18: Initial authentication implementation with Keychain
+ */
+
 import Foundation
 import Security
 

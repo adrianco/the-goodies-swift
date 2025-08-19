@@ -1,9 +1,30 @@
-//
-//  ContentView.swift
-//  bertha
-//
-//  Created by Adrian Cockcroft on 8/18/25.
-//
+/**
+ * File: ContentView.swift
+ * Purpose: Main UI for Bertha test application
+ * 
+ * CONTEXT:
+ * Bertha is a SwiftUI test application that demonstrates the usage of
+ * Wildthing and Inbetweenies packages. It provides a user interface for
+ * testing connection, synchronization, and entity management features.
+ * 
+ * FUNCTIONALITY:
+ * - Tab-based navigation (Home, Connection, Entities, Settings)
+ * - Server connection configuration UI
+ * - Authentication with client ID and password
+ * - Connection status display
+ * - Entity listing and management (planned)
+ * - Settings configuration (planned)
+ * 
+ * TESTING USAGE:
+ * This app is designed for testing the Swift implementation against
+ * a running FunkyGibbon server. Use the Connection tab to configure
+ * and establish a connection to the server.
+ * 
+ * CHANGES:
+ * - 2025-08-19: Added comprehensive documentation
+ * - 2025-08-18: Initial UI implementation
+ * - Created by Adrian Cockcroft on 8/18/25.
+ */
 
 import SwiftUI
 

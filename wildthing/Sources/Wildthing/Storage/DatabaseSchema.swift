@@ -1,3 +1,33 @@
+/**
+ * File: DatabaseSchema.swift
+ * Purpose: SQLite database schema definitions
+ * 
+ * CONTEXT:
+ * Defines the database structure for local storage including tables
+ * for entities, relationships, sync metadata, and offline queue.
+ * Uses SQLite.swift for type-safe database operations.
+ * 
+ * FUNCTIONALITY:
+ * - Entity table with versioning and sync tracking
+ * - Relationship table with bidirectional references
+ * - Sync metadata for vector clocks and cursors
+ * - Offline queue for pending operations
+ * - Optimized indexes for query performance
+ * - Foreign key constraints for data integrity
+ * 
+ * PYTHON PARITY:
+ * Corresponds to database schema in Python blowing-off
+ * - ✅ Entity storage with all fields
+ * - ✅ Relationship storage
+ * - ✅ Sync metadata tracking
+ * - ✅ Offline queue management
+ * - ✅ Performance indexes
+ * 
+ * CHANGES:
+ * - 2025-08-19: Added comprehensive documentation
+ * - 2025-08-18: Initial schema implementation with indexes
+ */
+
 import Foundation
 import SQLite
 import Inbetweenies

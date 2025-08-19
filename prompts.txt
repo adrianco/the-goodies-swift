@@ -101,3 +101,5 @@ Update Todos
   2. Built and tested with Swift 6.1
   3. Run on iOS simulators or devices
   4. Connected to a FunkyGibbon server for end-to-end testing
+
+ npx claude-flow@alpha swarm "do detailed code review to make sure functionality matches the python implementation, generate context comment blocks at the start of every code file to record what it does and changes over time, write a human testing guide to start a funkygibbon server and run bertha in the Xcode simulator" --continue-session

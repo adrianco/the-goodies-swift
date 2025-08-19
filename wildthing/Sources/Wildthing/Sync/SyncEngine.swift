@@ -1,3 +1,34 @@
+/**
+ * File: SyncEngine.swift
+ * Purpose: Core synchronization engine for client-server data coordination
+ * 
+ * CONTEXT:
+ * Manages the synchronization protocol between client and server, handling
+ * conflict resolution, vector clock updates, and bidirectional data flow.
+ * Implements the Inbetweenies protocol for distributed consistency.
+ * 
+ * FUNCTIONALITY:
+ * - Delta and full synchronization modes
+ * - Conflict detection and resolution
+ * - Vector clock management for causality tracking
+ * - Cursor-based incremental sync
+ * - Batch change application
+ * - Network error handling and retry logic
+ * 
+ * PYTHON PARITY:
+ * Corresponds to blowing-off/sync.py in Python implementation
+ * - ✅ Sync request/response protocol
+ * - ✅ Vector clock synchronization
+ * - ✅ Conflict resolution strategies
+ * - ✅ Delta and full sync modes
+ * - ✅ Cursor-based pagination
+ * - ✅ Change application logic
+ * 
+ * CHANGES:
+ * - 2025-08-19: Added comprehensive documentation
+ * - 2025-08-18: Implemented complete sync engine
+ */
+
 import Foundation
 import Inbetweenies
 
